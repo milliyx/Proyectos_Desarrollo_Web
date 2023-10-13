@@ -41,19 +41,18 @@
     padding: 20px;
 }
 
-
 @font-face {
-    font-family: 'Montserrat-Bold';
-    src: url(/fonts/Montserrat-Bold.woff2) format('woff2');
-    font-weight: bold;
+    font-family: 'SilkSerif-Regular';
+    src: url('../fonts/SilkSerif-Regular.woff2') format('woff2');
+    font-weight: normal;
     font-style: normal;
 }
 
 .text-left {
-    font-family: 'Montserrat-Bold', sans-serif; /* Usar la fuente personalizada */
+    font-family: 'SilkSerif-Regular', sans-serif;
+    font-size: 24px; /* Ajusta el tamaño del texto según tus preferencias */
     /* Otras propiedades de estilo del texto */
 }
-
 
  /* .matt-here{
 	background-color: darkcyan;
@@ -66,6 +65,14 @@
      color: white;
      font-size: 20px;
  }
+
+ .logo {
+    position: absolute;
+    top: 20px; /* Agrega un margen superior para evitar la superposición */
+    left: 20px;
+    padding: 10px;
+    z-index: 999;
+}
 
  .foto {
      padding: 10px;
