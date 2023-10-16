@@ -7,121 +7,270 @@
      margin: 0;
      /* Fija la imagen de fondo en su lugar mientras se desplaza la página */
  }
-/* styles.css */
 
-/* styles.css */
+/* Cambiar el tamaño de la fuente de los enlaces del navbar */
+.navbar-nav .nav-link {
+    font-size: 14px; /* Ajusta el tamaño de la fuente según tus preferencias */
+}
 
-/* styles.css */
+ /* Cambia la fuente y el tamaño de letra del título */
+.elementor-heading-title {
+    font-size: 40px; 
+    margin-top: -30px;/* Reemplaza 24px con el tamaño de letra deseado */
+}
+
 
 .full-screen-image-wrapper {
-    position: relative;
+    /* Establece la altura al 100% del viewport */
     height: 100vh;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: white;
+    flex-direction: column;
+    justify-content: flex-start; /* Alinea arriba verticalmente */
+    align-items: center; /* Alinea al centro horizontalmente */
 }
 
-.full-screen-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
+
+/* Agrega un fondo negro al desplazar */
+.full-screen-image-wrapper.black-background {
+    background-color: rgba(0, 0, 0, 0.7); /* Ajusta la opacidad (0.7 en este caso) */
 }
 
-.text-left {
-    position: absolute;
-    left: 0;
-    top: 50%; /* Mueve el texto hacia abajo un 50% del contenedor */
-    transform: translateY(50%); /* Alinea verticalmente el texto en el centro */
-    text-align: left;
-    color: white;
-    padding: 20px;
+.navbar {
+    margin-top: -520px; 
+    margin-right: -530px;/* Ajusta la distancia entre la parte superior de la pantalla y el navbar */
 }
 
-@font-face {
-    font-family: 'SilkSerif-Regular';
-    src: url('../fonts/SilkSerif-Regular.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
+
+ .full-screen-image {
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+     position: absolute;
+     top: 0;
+     left: 0;
+ }
+.black-background {
+    background-color: black; /* Color de fondo negro */
+    color: white; /* Color de texto blanco */
+    text-align: center; /* Alineación del texto al centro */
+    font-size: 36px; /* Tamaño de fuente grande */
+    padding: 20px; /* Espaciado interno para el texto */
 }
 
-.text-left {
-    font-family: 'SilkSerif-Regular', sans-serif;
-    font-size: 24px; /* Ajusta el tamaño del texto según tus preferencias */
-    /* Otras propiedades de estilo del texto */
-}
+ .text-left {
+     position: absolute;
+     left: 0;
+     top: 50%;
+     /* Mueve el texto hacia abajo un 50% del contenedor */
+     transform: translateY(50%);
+     /* Alinea verticalmente el texto en el centro */
+     text-align: left;
+     color: white;
+     padding: 20px;
+ }
+
+ @font-face {
+     font-family: 'SilkSerif-Regular';
+     src: url('../fonts/SilkSerif-Regular.woff2') format('woff2');
+     font-weight: normal;
+     font-style: normal;
+ }
+
+ .text-left {
+     font-family: 'SilkSerif-Regular', sans-serif;
+     font-size: 24px;
+     /* Ajusta el tamaño del texto según tus preferencias */
+     /* Otras propiedades de estilo del texto */
+ }
 
  /* .matt-here{
 	background-color: darkcyan;
 	padding: 10px;
 
 } */
+
+
+ .logo {
+     position: absolute;
+     top: 20px;
+     /* Agrega un margen superior para evitar la superposición */
+     left: 20px;
+     padding: 10px;
+     z-index: 999;
+ }
+
+ /* styles.css */
+
+ /* styles.css */
+
+ .text-additional {
+     margin-top: -80px;
+    margin-bottom: 40px; 
+    font-size: 24px;/* Ajusta el valor para el espacio inferior */
+     /* Ajusta el valor según tu preferencia */
+     /* Otros estilos según tus necesidades */
+ }
+
+ /* Estilo personalizado para los botones */
+ /* Estilos para el contenedor de botones */
+
+
+ /* Estilos para el contenedor de botones */
+ /* Estilos para el contenedor de botones */
+ .button-container {
+     position: absolute;
+     z-index: 999;
+     /* Asegura que los botones estén en la capa superior */
+     top: 80%;
+     /* Alinea verticalmente el contenedor de botones */
+     left: 10px;
+     /* Coloca los botones a la izquierda */
+     transform: translateY(-50%);
+     /* Centra verticalmente el contenedor de botones */
+ }
+
+
+ /* Estilos para el botón personalizado */
+ /* Estilos para el contenedor de la imagen */
+ .image-container {
+     position: relative;
+     display: inline-block;
+ }
+
+ /* Estilos para la imagen de fondo */
+ .image-container img {
+     width: 100%;
+     height: auto;
+     display: block;
+ }
+@font-face {
+    font-family: 'Montserrat'; /* Nombre de la fuente personalizada */
+    src: url('../fonts/Montserrat-Regular.woff2') format('woff2'); /* Ruta al archivo de fuente */
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Estilos para el contenedor de los botones */
+.button-container {
+    display: flex; /* Utiliza flexbox para alinear los elementos internos */
+    justify-content: center; /* Alinea horizontalmente los elementos en el centro */
+    align-items: center; /* Alinea verticalmente los elementos en el centro */
+}
+
+/* Estilos para ambos botones personalizados */
+.custom-button {
+    width: 5.9cm;
+    height: 1.5cm;
+    background-color: #f28e0cd9; /* Cambia el color de fondo del primer botón */
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 0;
+    text-decoration: none;
+    text-align: center;
+    margin: 0 10px; /* Ajusta el margen horizontal para alinear los botones */
+    font-size: 18px; /* Cambia el tamaño de la fuente a 18px o el valor que desees */
+    margin-top: 100px; /* Agrega margen superior para mover el botón hacia abajo */
+
+}
+
+/* Estilos para el segundo botón personalizado */
+.custom-button-2 {
+    width: 5.9cm;
+    height: 1.5cm;
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #f28e0cd9;
+    padding: 10px 20px;
+    border-radius: 0px;
+    text-decoration: none;
+    text-align: center;
+    margin: 0 10px;
+        font-size: 18px; /* Cambia el tamaño de la fuente a 18px o el valor que desees */
+    margin-top: 100px; /* Agrega margen superior para mover el botón hacia abajo */
+
+    }
+
+/* Otros estilos que puedas necesitar */
+.landing {
+    background-color: #000; /* Establece el color de fondo a negro (#000) */
+    color: #fff; /* Establece el color del texto a blanco (#fff) o el color que prefieras */
+}
+
  .texto {
-     background-color: darkcyan;
+     background-color: transparent;
      padding: 10px;
      color: white;
      font-size: 20px;
  }
-
- .logo {
-    position: absolute;
-    top: 20px; /* Agrega un margen superior para evitar la superposición */
-    left: 20px;
-    padding: 10px;
-    z-index: 999;
+/* Estilos comunes para .foto */
+.foto {
+    padding: 90px;
 }
 
- .foto {
-     padding: 10px;
-     background-color: green;
-     /* Green */
-     border: none;
-     color: rgb(255, 255, 255);
-     padding: 15px 32px;
-     text-align: center;
-     text-decoration: none;
-     display: inline-block;
-     font-size: 16px;
- }
+/* Estilos específicos para pantallas grandes (por ejemplo, a partir de 992px de ancho) */
+@media (min-width: 992px) {
+    .foto {
+        float: right;
+        padding: 0; /* Para eliminar el espacio adicional cuando está a la derecha */
+    }
+}
 
- .btn2 {
-     background-color: pink;
-     /* Green */
-     border: none;
-     color: white;
-     padding: 15px 32px;
-     text-align: center;
-     text-decoration: none;
-     display: inline-block;
-     font-size: 16px;
- }
+/* Estilos específicos para pantallas pequeñas */
+@media (max-width: 991px) {
+    .foto {
+        float: none; /* Anula la propiedad float */
+        margin: 0 auto; /* Centra el elemento horizontalmente */
+    }
+}
 
- .btn3 {
-     background-color: purple;
-     /* Green */
-     border: none;
-     color: white;
-     padding: 15px 32px;
-     text-align: center;
-     text-decoration: none;
-     display: inline-block;
-     font-size: 16px;
- }
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Esto centra verticalmente en pantalla completa. Ajusta según tus necesidades. */
+}
 
- .btn4 {
-     background-color: grey;
-     /* Green */
-     border: none;
-     color: white;
-     padding: 15px 32px;
-     text-align: center;
-     text-decoration: none;
-     display: inline-block;
-     font-size: 16px;
- }
- /* styles.css */
+.video-container iframe {
+    max-width: 100%; /* Asegúrate de que el video no sea más ancho que el contenedor. */
+}
+
+section img {
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+.carrusel {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden; /* Cambiamos scroll a hidden para ocultar la barra de desplazamiento */
+    white-space: nowrap; /* Para evitar que las imágenes se desplacen a la siguiente línea */
+    animation: scroll 10s linear infinite; /* Animación de desplazamiento */
+}
+
+.elemento {
+    flex: 0 0 auto;
+    margin: 0 50px;
+    background-color: rgb(0, 0, 0);
+    width: 500px;
+    height: 500px;
+    display: inline-block;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%); /* Desplaza un elemento completamente fuera del carrusel */
+    }
+}
+
+.mi-imagen {
+    width: 500px; /* Ajusta el ancho a 300 píxeles */
+    height: 600px; /* Ajusta el alto a 200 píxeles */
+    margin-left: 30px;
+}
 
 

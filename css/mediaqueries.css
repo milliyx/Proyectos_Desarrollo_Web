@@ -1,0 +1,108 @@
+/* Bootstrap: https://getbootstrap.com/docs/5.1/layout/breakpoints/ */
+/*// X-Small devices (portrait phones, less than 576px)*/
+/*// No media query for `xs` since this is the default in Bootstrap*/
+
+/*// Small devices (landscape phones, 576px and up)*/
+
+@media screen and (max-width: 480px) {
+
+    #navbar {
+        width: 10%;
+    }
+
+    #img-matt-desktop {
+        width: 45%;
+    }
+
+    .texto {
+        background-color: darkred;
+    }
+
+    .btn1 {
+        margin: 10px;
+    }
+
+    .btn2 {
+        margin: 10px;
+    }
+
+    .btn3 {
+        margin: 10px;
+    }
+
+    .btn4 {
+        margin: 10px;
+    }
+
+    .buffet-title {
+        font-size: 14px;
+        /* Tamaño aún más pequeño para pantallas pequeñas (móviles) */
+    }
+
+}
+
+/*// Medium devices (tablets, 768px and up)*/
+@media screen and (max-width: 768px) {
+    #img-matt-desktop {
+        width: 55%;
+    }
+
+    .btn1 {
+        margin: 10px;
+    }
+
+    .btn2 {
+        margin: 10px;
+    }
+
+    .btn3 {
+        margin: 10px;
+    }
+
+    .btn4 {
+        margin: 10px;
+    }
+
+    .buffet-title {
+        font-size: 14px;
+        /* Tamaño aún más pequeño para pantallas pequeñas (móviles) */
+    }
+}
+
+/*// Large devices (desktops, 992px and up)*/
+@media screen and (max-width: 1024px) {
+    #img-matt-desktop {
+        width: 65%;
+    }
+
+    .buffet-title {
+        font-size: 14px;
+        /* Tamaño aún más pequeño para pantallas pequeñas (móviles) */
+    }
+
+}
+
+/*// X-Large devices (large desktops, 1200px and up)*/
+@media screen and (max-width: 1200px) {
+
+    #img-matt-desktop {
+        width: 75%;
+    }
+
+    .buffet-title {
+        font-size: 14px;
+        /* Tamaño aún más pequeño para pantallas pequeñas (móviles) */
+    }
+
+}
+
+/*// XX-Large devices (larger desktops, 1400px and up)*/
+@media screen and (max-width: 1400px) {
+
+    #img-matt-desktop {
+        width: 100%;
+    }
+
+
+
+}
