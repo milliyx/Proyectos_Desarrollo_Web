@@ -273,4 +273,105 @@ section img {
     margin-left: 30px;
 }
 
+.landing-content {
+    text-align: center;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
 
+.mi-imagen {
+    max-width: 100%;
+}
+
+.textA {
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.7);
+    color: white;
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 1s, bottom 1s;
+}
+
+.landing-content:hover .text {
+    bottom: 0;
+    opacity: 1;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.footer-column {
+    text-align: left;
+    padding-right: 20px;
+}
+
+.footer h3 {
+    margin-top: 0;
+    font-size: 1.2rem;
+}
+
+/* Agrega un fondo de línea divisoria a la derecha de las columnas */
+.footer-column:not(:last-child)::after {
+    content: "";
+    display: block;
+    width: 1px;
+    background-color: white; /* Color de la línea divisoria */
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.footer-social a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    background-color: white;
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 20px;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        grid-template-columns: 1fr;
+    }
+
+    /* Elimina el fondo de línea divisoria en diseño responsivo */
+    .footer-column::after {
+        content: none;
+    }
+}
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.image-container img {
+    width: 20%; /* Porcentaje del ancho de las imágenes en relación al contenedor */
+    max-width: 100%;
+    height: auto;
+    margin: 5px; /* Agrega margen entre las imágenes */
+        margin-left: -520px; /* Agrega margen superior para mover el botón hacia abajo */
+}
+
+@media (max-width: 768px) {
+    .image-container img {
+        width: 40%; 
+        margin: 0;/* En pantallas pequeñas, se pueden mostrar tres imágenes por fila */
+    
+    }
+}

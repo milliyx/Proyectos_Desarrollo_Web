@@ -47,7 +47,7 @@
 							<a class="nav-link" href="#">INICIO</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">MENU</a>
+							<a class="nav-link" href="Menu.html">MENU</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="#">PROMOCIONES</a>
@@ -56,13 +56,16 @@
 							<a class="nav-link" href="#">EVENTOS</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">SUCURSALES</a>
+							<a class="nav-link" href="Sucursales.html">SUCURSALES</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">BOLSA DE TRABAJO</a>
+							<a class="nav-link" href="Bolsa.html">BOLSA DE TRABAJO</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">HAZ TU RESERVACIÓN</a>
+							<a class="nav-link"
+								href="https://api.whatsapp.com/send?phone=525536704815&#038;text=¡Hola,%20Carvão!%20Quiero%20reservar."
+								target="_blank">¡HAZ TU RESERVACIÓN!</a>
+
 						</li>
 					</ul>
 				</div>
@@ -154,8 +157,82 @@
 						<img src="img/slide3.jpg" alt="Descripción de la imagen 3">
 					</div>
 				</div>
-				
+
 				<img src="img/Nuestras-promociones.jpg" alt="Descripción de la imagen" class="mi-imagen">
+				<div class="elementor-element elementor-element-8c9180c e-con-full e-flex e-con" data-id="8c9180c"
+					data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
+					<div class="elementor-element elementor-element-2a1dc82 elementor-widget elementor-widget-html"
+						data-id="2a1dc82" data-element_type="widget" data-widget_type="html.default">
+						<div class="elementor-widget-container">
+							<style>
+								/*ajustes de diseño para el marquee*/
+								.marquee {
+									font-family: "Silk Serif Normal", Sans-Serif;
+									font-size: 80px;
+									line-height: 1.5em;
+									color: var(--ast-global-color-0);
+									position: relative;
+									width: 100vw;
+									max-width: 100%;
+									height: 140px;
+									overflow-x: hidden;
+								}
+
+								/*ruptura tablet*/
+								@media(max-width:1023px) {
+									.marquee {
+										font-size: 65px;
+										height: 100px;
+									}
+								}
+
+								/*ruptura movil*/
+								@media(max-width:666px) {
+									.marquee {
+										font-size: 52px;
+										height: 70px;
+									}
+								}
+
+								/*duracion y efecto de transición*/
+								.track {
+									position: absolute;
+									white-space: nowrap;
+									will-change: transform;
+									animation: marquee 40s linear infinite;
+								}
+
+								/*efecto que al llegar al 50% del recorrido se vuelve a repetir*/
+								@keyframes marquee {
+									from {
+										transform: translateX(0);
+									}
+
+									to {
+										transform: translateX(-50%);
+									}
+								}
+							</style>
+							<div class="marquee">
+								<div class="track">
+									<div class="content-m"><span>La calidad de nuestros cortes y la calidez en nuestro
+											servicio te harán volver &nbsp;&nbsp;·&nbsp;&nbsp; La calidad de nuestros
+											cortes y la calidez en nuestro servicio te harán volver
+											&nbsp;&nbsp;·&nbsp;&nbsp; La calidad de nuestros cortes y la calidez en
+											nuestro servicio te harán volver &nbsp;&nbsp;·&nbsp;&nbsp; La calidad de
+											nuestros cortes y la calidez en nuestro servicio te harán volver
+											&nbsp;&nbsp;·&nbsp;&nbsp; La calidad de nuestros cortes y la calidez en
+											nuestro servicio te harán volver &nbsp;&nbsp;·&nbsp;&nbsp; </span> </div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+
+			</div><!-- .entry-content .clear -->
 
 			</div>
 
@@ -163,6 +240,38 @@
 		</section>
 
 	</main>
+	<footer class="footer">
+		<div class="footer-column">
+			<h3>Horario</h3>
+			<p>Lunes a viernes<br>de 1:00 pm a 10:00 pm</p>
+			<p>Sábados y domingos<br>de 11:00 am a 10:00 pm</p>
+		</div>
+		<div class="footer-column">
+			<h3>Contacto</h3>
+			<p>WhatsApp · (55) 3670 4815</p>
+		</div>
+		<div class="footer-column">
+			<h3>Redes Sociales</h3>
+			<div class="footer-social">
+				<a href="#"><i class="fab fa-facebook-f"></i></a>
+				<a href="#"><i class="fab fa-instagram"></i></a>
+				<a href="#"><i class="fab fa-tiktok"></i></a>
+				<a href="#"><i class="fab fa-youtube"></i></a>
+			</div>
+		</div>
+
+		<div class="image-container">
+			<img src="/img/carboncito-logo-color.svg" alt="Imagen 1">
+			<img src="/img/SalonesBarrera_SVG_FondoBlanco.svg" alt="Imagen 2">
+			<img src="/img/TaSHIRLOIN.svg" alt="Imagen 3">
+		</div>
+		<footer>
+			<p>&copy; 2023 Carvao do Brasil</p>
+		</footer>
+
+	</footer>
+
+
 </body>
 
 </html>
